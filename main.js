@@ -2,7 +2,7 @@ const listProduct = () => {
     axios.get(`http://localhost:3000/products`).then(({ data }) => {
         document.querySelector("tbody").innerHTML = data
             .map((product, index) => {
-                return/*html */`
+                return `
         <tr>
             <td>${index + 1}</td>
             <td>${product.name}</td>
@@ -46,7 +46,7 @@ const listProduct = () => {
 
 /* ADD */
 const addProduct = () => {
-    document.querySelector(".container").innerHTML =/*html */ `
+    document.querySelector(".container").innerHTML = `
     <div class="container">
     <h1>Add new Product </h1>
     <form action="" id="form">
@@ -81,7 +81,7 @@ document.getElementById("btn-add").addEventListener("click", addProduct)
 /*UPDATE */
 const updateProduct = (id) => {
     axios.get(`http://localhost:3000/products/${id}`).then(({ data }) => {
-        document.querySelector(".container").innerHTML = /*html */ `
+        document.querySelector(".container").innerHTML = `
         <div class="container">
             <h1>Update Product </h1>
             <form action="" id="form">
@@ -117,7 +117,7 @@ const updateProduct = (id) => {
 
 /*Log In */
 const logIn = () => {
-    document.querySelector(".container").innerHTML = /*html*/`
+    document.querySelector(".container").innerHTML = `
     <div class="container">
         <h1>Sign In</h1>
         <form action="" id="form">
