@@ -1,0 +1,26 @@
+{
+  "products": [
+    {
+      "name": "Product 1 update",
+      "image": "https://picsum.photos/150/100",
+      "id": 1
+    },
+    {
+      "name": "Product 2",
+      "image": "https://picsum.photos/150/100",
+      "id": 2
+    },
+    {
+      "name": "Product 3",
+      "image": "https://picsum.photos/150/100",
+      "id": 3
+    }
+  ],
+  "users": [
+    {
+      "username": "admin",
+      "password": "12345",
+      "id": 1
+    }
+  ]
+}
